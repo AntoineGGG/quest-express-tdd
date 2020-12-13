@@ -66,7 +66,7 @@ describe('Test routes', () => {
     });
     it('Get the right bookmarks depend on the ID provided', (done) => {
       request(app)
-        .get('/bookmarks/:id')
+        .get('/bookmarks/1')
         .expect(200)
         .expect('Content-Type', /json/)
         .then((res) => {
